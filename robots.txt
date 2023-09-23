@@ -1,0 +1,4 @@
+User-agent: *
+Allow: *
+Host: a-club.net
+Sitemap: http://a-club.net/sitemap.xml

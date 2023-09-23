@@ -1,0 +1,249 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   CSS Redet:
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* --------------------------------------------------------- */
+/* ---header--- */
+html{
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+body {
+	/* background-color: #b9b9b9; */
+	background-image: linear-gradient(#b9b9b9, #948074);
+	width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.wrapper {
+	width: 96%;
+	max-width: 1170px;
+	margin: 0 auto;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+h1 {
+	display: none;
+}
+header .header_headpiece {
+	position: relative;
+	overflow: hidden;
+}
+header .header_headpiece .mask {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: hsla(180, 5%, 4%, 0.9);
+}
+/* --------------------- */
+header .header_headpiece .mask .wrapper .header_info {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: 345px;
+}
+header .header_headpiece .mask .wrapper .header_info .header_block_left {
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	max-width: 50%;
+}
+header .header_headpiece .mask .wrapper .header_info .header_block_left .logo {
+	padding-top: 20px;
+}
+header .header_headpiece .mask .wrapper .header_info .header_block_left .logo img {
+	width: 100%;
+	height: 100%;
+}
+header .header_headpiece .mask .wrapper .header_info .header_block_left .slogan {
+	color: #e46008;
+	padding-top: 20px;
+	font-size: 22px;
+	font-style: italic;
+/*	text-decoration: underline; */
+	letter-spacing: 3px;
+}
+header .header_headpiece .mask .wrapper .header_info .header_block_left .contacts {
+	color: #e2a780;
+	padding-top: 20px;
+	font-size: 18px;
+	letter-spacing: 2px;
+	line-height: 2;
+}
+/* --------------------- */
+header .header_headpiece .mask .wrapper .header_info .menu {
+	color: #e2a780;
+	padding-top: 50%;
+	font-size: 18px;
+	letter-spacing: 2px;
+	line-height: 4;
+	float: right;
+}
+header .header_headpiece .mask .wrapper .header_info .menu a:hover {
+	color: #e42908;
+	transition-duration: 0.5s;
+}
+/* ---main--- */
+main {
+	text-shadow: 0.3px 0.3px  0.8px rgb(31, 31, 31);
+}
+main .specification {
+	color: #000000;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	font-size: 18px;
+	letter-spacing: 1px;
+	line-height: 1.5;
+	/* font-family: Arial, Helvetica, sans-serif; */
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	text-align:justify;
+	/* text-indent: 30px; */
+}
+main .specification p {
+	margin-bottom: 1em;
+}
+main .type_of_work img {
+	width: 300px;
+	height: auto;
+}
+main .type_of_work .examples .block {
+	display: flex;
+	align-items: center;
+	margin-bottom: 30px;
+	color: #140300;
+	font-size: 16px;
+	letter-spacing: 1px;
+	line-height: 1.5;
+	font-family: Arial, Helvetica, sans-serif;
+}
+main .type_of_work .examples .block .content {
+	margin-left: 30px;
+	width: 80%;
+}
+main .type_of_work .examples .block .content h2 {
+	color: #550600;
+	font-size: 18px;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-style: italic;
+	margin-bottom: 10px;
+}
+/* -------------------- */
+.fotogallery_LightBox {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.maps_google {
+	display: flex;
+	justify-content: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+/* ---footer--- */
+footer {
+	background-color: #2b2626;
+	max-width: 100%;
+	height: auto;
+    display: block;
+}
+footer .wrapper .footer_contacts {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	align-items: center;
+	/* margin-bottom: 30px; */
+	color: #ffffff;
+	font-size: 16px;
+	letter-spacing: 1px;
+	line-height: 1.5;
+	font-family: Arial, Helvetica, sans-serif;
+}
+footer .wrapper .footer_contacts address {
+	margin-left: 30px;
+}
+footer .wrapper .footer_contacts address span {
+	color: #e46008;
+	font-size: 16px;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-style: italic;
+}
+footer .wrapper .footer_contacts address .social img {
+	padding-top: 20px;
+	width: 50px;
+	height: auto;
+	margin-right: 20px;
+}
+footer .wrapper .c p {
+	color: #e46008;
+	font-size: 16px;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-style: italic;
+	padding-bottom: 30px;
+}
+#toTop {
+	width:100px;
+	border:1px solid #ccc;
+	background:#eea380;
+	text-align:center;
+	padding:5px;
+	position:fixed;
+	bottom:10px; /* отступ кнопки от нижнего края страницы*/
+	right:10px;
+	cursor:pointer;
+	display:none;
+	color:#333;
+	font-family:verdana;
+	font-size:11px;
+}

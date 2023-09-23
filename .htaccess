@@ -1,0 +1,32 @@
+# С https:// на http:// Обратный редирект, если перестали использовать SSL сертификат.
+
+RewriteEngine On
+RewriteCond %{SERVER_PORT} ^443$ [OR]
+RewriteCond %{ENV:HTTPS} =on
+RewriteRule ^(.*)$ http://a-club.net/$1 [R=301,L]
+
+
+# 301 редирект с домена с WWW на домен без WWW
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www.a-club.net$ [NC]
+RewriteRule ^(.*)$ http://a-club.net/$1 [R=301,L]
+
+
+# 301 редирект со страниц со слешем на без слеша (весь сайт)
+
+RewriteCond %{REQUEST_URI} !\? 
+RewriteCond %{REQUEST_URI} !\& 
+RewriteCond %{REQUEST_URI} !\= 
+RewriteCond %{REQUEST_URI} !\. 
+RewriteCond %{REQUEST_URI} ![^\/]$ 
+RewriteRule ^(.*)\/$ /$1 [R=301,L]
+
+
+# Массовая склейка index.php, index.html, index.htm, index.asp
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.(php|html|htm)\ HTTP/
+RewriteRule ^(.*)index\.(php|html|htm)$ http://a-club.net/$1 [R=301,L]
+
+# Конец редиректа
+

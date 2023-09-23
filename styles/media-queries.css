@@ -1,0 +1,77 @@
+@media (max-width: 980px) {
+
+    header .header_headpiece .mask {
+        background: hsla(180, 5%, 4%, 0.8);
+    }
+    header .header_headpiece .mask .wrapper .header_info {
+        flex-direction: column;
+    }
+    header .header_headpiece .mask .wrapper .header_info .header_block_left{
+        max-width: 100%;
+    }
+    header .header_headpiece .mask .wrapper .header_info .header_block_left .slogan {
+        font-size: medium;
+    }
+    header .header_headpiece .mask .wrapper .header_info .header_block_left .contacts {
+        font-size: medium;
+        letter-spacing: 1.5px;
+	    line-height: 1.5;
+    }
+    header .header_headpiece .mask .wrapper .header_info .menu {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        color: #e42908;
+        padding-top: 2%;
+        font-size: small;
+        float: none;
+        letter-spacing: 1px;
+        line-height: 0;
+        padding: 2%;
+        
+    }
+    header .header_headpiece .mask .wrapper .header_info .menu li {
+        margin-bottom: 10px;
+    }
+    /* --------------------------------------------- */
+    main .specification {
+        font-size: medium;
+    }
+    main .type_of_work img {
+        width: 90%;
+        height: auto;
+    }
+    main .type_of_work .examples .block {
+        display: block;
+        justify-content: space-between;
+        text-align: center;
+        font-size: medium;
+        letter-spacing: 1px;
+        line-height: 1.2;
+    }
+    main .type_of_work .examples .block .content {
+        margin-left: 0px;
+        text-align: justify;
+        width: 100%;
+    }
+    main .type_of_work .examples .block .content h2 {
+        text-align: center;
+    }
+    /* -------------------- */
+    .fotogallery_LightBox {
+        text-align: center;
+    }
+    /* -------------------- */
+    footer .wrapper .footer_contacts {
+        font-size: medium;
+        letter-spacing: 1px;
+        line-height: 1.5;
+    }
+    footer .wrapper .footer_contacts .maps {
+        display: none;
+    }
+    footer .wrapper .c p {
+        font-size: medium;
+    }
+
+}
