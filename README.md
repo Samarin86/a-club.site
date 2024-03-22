@@ -1,2 +1,2 @@
-# a-club.site
+# auto-club
 A simple landing page for a car service.
